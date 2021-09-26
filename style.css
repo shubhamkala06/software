@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: Optima, sans-serif;
+}
+
+hr{
+    background-color: white;
+}
+
+li{
+    margin: 5px;
+
+}
+
+
+/* class selectors */
+.title{
+    font-family: Bookman, URW Bookman L, serif;
+}
+
+.padding{
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+.row{
+    display: flex;
+}
+
+.header{
+    height: 80px;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 5px ;
+    background-color: #2874f0;
+    color: white;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 3.5em;
+}
+
+
+.foot{
+    margin: 30px 0px;
+    padding:20px 10px;
+    background-color: #2874f0;
+    color:white;
+    
+}
+
+.fcontent{
+    font-size: 14px;
+}
+
+
+.footer_item{
+    width: 10%;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+
+.f_title{
+    font-size: 19.4px;
+}
+
+.tile{
+    width: 28%;
+    margin: 0px 30px;
+    padding: 0px 10px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer !important;
+}
+
+.b_title{
+    width: 50%;
+    font-size: 35px;
+    cursor: pointer !important;
+    margin: 20% 30%;
+}
+
+.info{
+    font-size:16px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px 10px;
+    border: 2px dashed black;
+}
+
+.bcontent{
+    font-size: 20px;
+    color: thistle;
+}
+
+.hidden{
+	display:none;
+}
+
+.visible{
+	display:block;
+}
+
+
+
+/* psuedo class selectors */
+div.tile:hover{
+    background-color: rgb(197, 184, 184);
+}
+
+*:hover{
+    cursor: default;   
+}
+
+li:hover{
+    padding: 5px 40px;
+    background-image: url('loader_big.gif');
+    background-repeat: no-repeat;
+}
+
+p.info:hover{
+    font-size: 20px;
+}

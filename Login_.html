@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .foot{
+            position:fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+    </style>
+    <script type="text/javascript" language="javascript">
+        function validateform() {
+            var n = document.getElementById("name").value;
+            var c = document.getElementById("pass").value;
+
+            if (n == null || n == "") {
+                alert("Name can't be blank");
+                return false;
+
+            }
+            else if (!/[^0-9\-!@#$%&*()+=;,.?|\/]/.test(n)) {
+                alert('Name can only contain alphabets.\n Alphanumeric characters, Hyphens(-) and Back slashs(\)');
+                return false;
+            }
+            else if (c == "" || c.length <6) {
+                alert("Please provide valid password:");
+                return false;
+            }
+            else {
+                alert("Welcome" );
+                return true;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="head" class="header title">
+        Amazing Store
+    </h1><!--end div_header-->
+
+
+    <h1 align="center" class="title" style="font-size: 3em; ">
+        Amazing Store
+    </h1>
+
+    <br>
+    <center>
+    <h3>&nbsp&nbsp&nbsp&nbspUser-Login :</h3></h3>
+    <form name="myform" method="POST"  action="Assignment.html">
+
+        <label for="name">&nbsp&nbsp&nbsp&nbsp&nbspName:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="contact">Password:</label>
+        <input type="password" id="pass" name="contact"><br><br>
+
+        <input type="submit" onclick="return validateform();">
+
+    </form>
+    </center>
+
+
+    <footer id="end" class="foot">
+        
+        <div id="f_content" class="row">
+            <div id="policy" class="footer_item">
+                <div id="p_head" class="title f_title">
+                    POLICY
+                </div>
+                <hr>
+                <div id="p_data" class="fcontent">
+                    <p>Payments</p>
+                    <p>Shipping</p>
+                    <p>Cancellation & Returns</p>
+                    <p>FAQ</p>
+                </div><!--end div_policy-->
+            </div>
+            
+            <div id="social" class="footer_item">
+                <div id="s_head" class="title f_title">
+                    SOCIAL
+                </div>
+                <hr>
+                <div id="s_data" class="fcontent">
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Youtube</p>
+                </div>
+            </div><!--end div_social-->
+        </div>
+    </footer><!--end footer-->
+</body>
+</html>
